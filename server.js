@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
     res.send({'message': 'Lests GO!'})
 });
 
-app.post('/', createUserController);
+app.post('/user/signup', createUserController);
 
 module.exports = app;
